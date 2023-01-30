@@ -22,8 +22,10 @@ class NewsOutput(NewsBase):
     comments_count: int
 
 
+class OutputNewsData(BaseModel):
+    news: List[NewsOutput]
+    news_count: int
+
+
 class NewsOutputById(NewsOutput):
     comments: List[CommentOutput]
-
-
-
