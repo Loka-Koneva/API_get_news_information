@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: fastapi_api_news
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./get_news_information_project:/get_news_information_project
