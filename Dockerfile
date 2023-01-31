@@ -9,4 +9,4 @@ RUN set -eux \
 
 COPY ./get_news_information_project /get_news_information_project
 
-CMD ["uvicorn", "get_news_information_project.app:app", "--host", "127.0.0.1", "--port", "8000"]
+CMD ["uvicorn", "get_news_information_project.app:app", "--host", "0.0.0.0", "--port", "8000"]
